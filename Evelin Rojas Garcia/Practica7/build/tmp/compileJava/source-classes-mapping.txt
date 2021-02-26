@@ -1,0 +1,8 @@
+com/uptlx/poo/evelin/Interfaz.java
+ com.uptlx.poo.evelin.Interfaz
+ com.uptlx.poo.evelin.Interfaz$1
+ com.uptlx.poo.evelin.Interfaz$2
+ com.uptlx.poo.evelin.Interfaz$3
+ com.uptlx.poo.evelin.Interfaz$4
+com/uptlx/poo/evelin/Main.java
+ com.uptlx.poo.evelin.Main
