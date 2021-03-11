@@ -2,8 +2,9 @@ apply plugin: 'java'
 apply plugin: 'jacoco'
 apply plugin: 'application'
 
+    group = 'UPTlax'
 
-mainClassName = 'Practica10.Main'
+mainClassName = 'UPTlax.Practica10.Main'
 
 repositories {
     jcenter()
