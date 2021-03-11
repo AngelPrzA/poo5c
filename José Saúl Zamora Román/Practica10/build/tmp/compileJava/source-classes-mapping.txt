@@ -1,0 +1,6 @@
+uptlax/Practica10/Persona.java
+ uptlax.Practica10.Persona
+uptlax/Practica10/Archivo.java
+ uptlax.Practica10.Archivo
+uptlax/Practica10/Main.java
+ uptlax.Practica10.Main
