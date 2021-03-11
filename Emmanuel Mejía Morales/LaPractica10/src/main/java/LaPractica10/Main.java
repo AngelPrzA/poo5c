@@ -20,7 +20,18 @@ public class Main {
         String temp = archivo.leer();
         System.out.println(temp);
         
-        archivo.escribir("archivos/nuevo_archivo.txt", false);
+        archivo.escribir("archivos/nuevo_archivo.txt","Esto es nuevo", false);
+        Persona persona = new Persona();
+        persona.setNombre("Andres");
+        persona.setTelefono("2642215003");
+        persona.setId("234342");
+        persona.setEdad("18");
+        persona.setCompania("La tiendita de la esquina");
+        
+        archivo.escribirObjeto(persona,"archivos/persona.data");
+        Persona personaDesdeArchivo = archivo.leerObjeto("archivos/persona.data");
+        System.out.println(personaDesdeArchivo.getNombre());
+        System.out.println(personaDesdeArchivo.getCompania());
     }
     
     
