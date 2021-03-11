@@ -1,0 +1,4 @@
+UPTlax/Practica10/Main.java
+ UPTlax.Practica10.Main
+UPTlax/Practica10/FileWriter.java
+ UPTlax.Practica10.FileWriter
