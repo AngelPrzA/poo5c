@@ -7,10 +7,17 @@ package Practica10_archivos;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -72,5 +79,57 @@ public class Archivo {
                 ex.printStackTrace();
             }
         }
+    }
+    
+    public void escribirObjeto(Persona persona, String ruta) {
+        
+        //Inicio cuerpo del metodo.
+        FileOutputStream fileOutputStream = null;
+        ObjectOutputStream objectOutputStream =  null;
+        try {
+            fileOutputStream = new FileOutputStream(ruta);
+            objectOutputStream = new ObjectOutputStream(fileOutputStream);
+            objectOutputStream.writeObject(persona);
+        }
+        catch (FileNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        finally {
+            if (objectOutputStream != null) {
+                try {
+                    objectOutputStream.close();
+                }
+                catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        }
+        //Fin cuerpo del metodo.
+    }
+    
+    public Persona leerObjeto(String ruta) {
+        FileInputStream fileInputStream = null;
+        ObjectInputStream objectInputStream = null;
+        Persona persona = new Persona();
+        try {
+            fileInputStream = new FileInputStream(ruta);
+            objectInputStream = new ObjectInputStream(fileInputStream);
+            persona = (Persona)objectInputStream.readObject();
+        } 
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        finally {
+            try {
+                objectInputStream.close();
+            }
+            catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+        return persona;
     }
 }
