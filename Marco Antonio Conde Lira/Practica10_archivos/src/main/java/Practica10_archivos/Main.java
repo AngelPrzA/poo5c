@@ -21,5 +21,17 @@ public class Main {
         System.out.println(temp);
         
         archivo.escribir("archivos/nuevo_archivo.txt",false);
+        
+        Persona persona = new Persona();
+        persona.setNombre("Marco");
+        persona.setCompania("UPTx");
+        persona.setId("1987774151");
+        persona.setEdad("20");
+        
+        archivo.escribirObjeto(persona, "archivos/persona.data");
+        
+        Persona personaDesdeArchivo = archivo.leerObjeto("archivos/persona.data");
+        System.out.println(personaDesdeArchivo.getNombre());
+        System.out.println(personaDesdeArchivo.getCompania());
     } 
 }
