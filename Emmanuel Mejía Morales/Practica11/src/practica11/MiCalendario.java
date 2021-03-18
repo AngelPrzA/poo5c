@@ -9,7 +9,7 @@ package practica11;
  *
  * @author armma
  */
-public class MiCalendario implements IFecha{
+public class MiCalendario implements IFecha, Diasfestivos{
 
     @Override
     public String dia() {
@@ -104,6 +104,20 @@ public class MiCalendario implements IFecha{
     @Override
     public String anio() {
     return "";
+    }
+
+    @Override
+    public String festivo() {
+        String festivo="";
+        if(IFecha.DIA_DE_MES == 6 && IFecha.MES_DEL_ANIO == 7){
+            festivo= "Es mi cumple años :D";
+        }
+        return festivo;
+    }
+
+    @Override
+    public String conmemorativo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

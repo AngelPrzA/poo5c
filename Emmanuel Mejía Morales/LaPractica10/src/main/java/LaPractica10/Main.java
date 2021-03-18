@@ -5,6 +5,8 @@
  */
 package LaPractica10;
 
+import LaPractica10.Uptlax.Persona;
+
 /**
  *
  * @author armma

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package LaPractica10;
+package LaPractica10.Uptlax;
 
 import java.io.Serializable;
 
@@ -15,7 +15,7 @@ public class Persona implements Serializable {
     private String id;
     private String imagen;
     private String edad;
-    private String nombre;
+    private Nombre nombre;
     private String compania;
     private String email;
     private String telefono;
@@ -26,7 +26,7 @@ public class Persona implements Serializable {
         this.id = "";
         this.imagen = "";
         this.edad = "";
-        this.nombre = "";
+        this.nombre = new Nombre();
         this.compania = "";
         this.email = "";
         this.telefono = "";
@@ -58,11 +58,11 @@ public class Persona implements Serializable {
         this.edad = edad;
     }
 
-    public String getNombre() {
+    public Nombre getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setNombre(Nombre nombre) {
         this.nombre = nombre;
     }
 

@@ -5,6 +5,7 @@
  */
 package LaPractica10;
 
+import LaPractica10.Uptlax.Persona;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
