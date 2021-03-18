@@ -1,0 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package uptlax.Practica10;
+
+/**
+ *
+ * @author casst
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Archivo archivo = new Archxivo("archivos/personas.txt");
+        String temp = archivo.leer();
+        System.out.println(temp);
+        
+        archivo.escribir("archivos/nuevo_archivo.txt", false);
+    }
+}

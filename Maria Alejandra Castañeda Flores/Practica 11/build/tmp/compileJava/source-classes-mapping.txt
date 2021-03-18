@@ -1,0 +1,8 @@
+Archivo.java
+ practica11.Archivo
+Practica11/objectInputStream.java
+ Practica11.objectInputStream
+Persona.java
+ practica11.Persona
+Practica11/Main.java
+ practica11.Main
