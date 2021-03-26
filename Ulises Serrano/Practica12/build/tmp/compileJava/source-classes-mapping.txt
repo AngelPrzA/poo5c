@@ -1,0 +1,12 @@
+Practica12/Persona.java
+ Practica12.Persona
+Practica12/Friend.java
+ Practica12.Friend
+Practica12/Personas.java
+ Practica12.Personas
+Practica12/Name.java
+ Practica12.Name
+Practica12/Archivo.java
+ Practica12.Archivo
+Practica12/Main.java
+ Practica12.Main
