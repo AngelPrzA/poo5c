@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package LaPractica10;
+package practica11;
 
 /**
  *
- * @author armma
+ * @author Antonio Conde
  */
-class objectInputstream {
+public interface DiasFestivos {
+    public abstract String festivosMexico();
+    public abstract String conmemorativo();
+    
     
 }
