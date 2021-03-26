@@ -1,0 +1,10 @@
+Uptlax/Practica10/clasesJSON/Personas.java
+ Uptlax.Practica10.clasesJSON.Personas
+Uptlax/Practica10/clasesJSON/Nombre.java
+ Uptlax.Practica10.clasesJSON.Nombre
+Uptlax/Practica10/Archivo.java
+ Uptlax.Practica10.Archivo
+Uptlax/Practica10/Main.java
+ Uptlax.Practica10.Main
+Uptlax/Practica10/clasesJSON/Persona.java
+ Uptlax.Practica10.clasesJSON.Persona

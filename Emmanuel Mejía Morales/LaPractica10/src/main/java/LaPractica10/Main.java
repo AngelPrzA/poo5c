@@ -5,6 +5,10 @@
  */
 package LaPractica10;
 
+import LaPractica10.Uptlax.Persona;
+import LaPractica10.Uptlax.Personas;
+
+
 /**
  *
  * @author armma
@@ -18,6 +22,22 @@ public class Main {
         // TODO code application logic here
         Archivo archivo = new Archivo("archivos/personas.txt"); 
         String temp = archivo.leer();
+        System.out.println("Este es el Json"+temp);
+        try{
+            Gson gson = new Gson();
+            Personas arregloPersonas= gson.fromJson(temp, Personas.class);
+            System.out.println("Nuestro arreglo de personas contiene"+arregloPersonas.getPersonas().size());
+            for(int i= 0;i < arregloPersonas.getPersonas().size();i++){
+                System.out.println("Numero de persona: "+i);
+                System.out.println("El nombre de la persona es:  "+arregloPersonas.getPersonas().get(i).getNombre().getNombre());
+                System.out.println("La esdad  es:  "+arregloPersonas.getPersonas().get(i).getEdad());
+            }
+        }catch(Exception e){
+            System.out.println(e.getMessage());    
+        }
+        
+        /*
+        
         System.out.println(temp);
         
         archivo.escribir("archivos/nuevo_archivo.txt","Esto es nuevo", false);
@@ -32,7 +52,8 @@ public class Main {
         Persona personaDesdeArchivo = archivo.leerObjeto("archivos/persona.data");
         System.out.println(personaDesdeArchivo.getNombre());
         System.out.println(personaDesdeArchivo.getCompania());
-    }
+    */
+}
     
     
 }
